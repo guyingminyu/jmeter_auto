@@ -1,0 +1,13 @@
+R-注册成功-1-15500${__Random(100000,999999,)}-123456aA+-测试名_${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-"code":100,"msg":"success","data":{"access_token"
+R-手机号大于11位-2-159000012345-123456-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-"code":10007,"msg":"手机格式不匹配"
+R-手机号小于11位-2-1590012345-123456-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-"code":10007,"msg":"手机格式不匹配"
+R-手机号为空-2--123456-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-"code":10007,"msg":"username参数不允许为空"
+R-手机号非纯数字-2-1590012345o-123456-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-"code":10007,"msg":"手机格式不匹配"
+N-密码大于14位-3-15900${__Random(100000,999999,)}-12345611111111111111-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-
+N-密码小于6位-3-15900${__Random(100000,999999,)}-12345-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-
+N-密码为空-3-15900${__Random(100000,999999,)}--测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-
+N-密码格式不正确-3-15900${__Random(100000,999999,)}-123456中文-测试异常${__RandomString(5,123456789abcdefghijklmnopqrstuvwxyz,)}-
+R-用户名大于24位-4-15900${__Random(100000,999999,)}-123456-测试异常名字超过24位123456789000000-"code":10007,"msg":"昵称需为2-24位中文、大小写字母、数字、下划线"
+R-用户名小于2位-4-15900${__Random(100000,999999,)}-123456-a-"code":10007,"msg":"昵称需为2-24位中文、大小写字母、数字、下划线"
+R-用户名为空-4-15900-123456--"code":10007,"msg":"nickname参数不允许为空"
+R-用户名带特殊符号-4-15900-123456-测试异常！#*a-"code":10007,"msg":"昵称需为2-24位中文、大小写字母、数字、下划线"
